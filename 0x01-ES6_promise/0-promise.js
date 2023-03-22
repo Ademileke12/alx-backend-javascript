@@ -1,11 +1,14 @@
 //keep every promise you can make and only make promise you can keep
-function getResponseFromAPI(){
-	var promise = new Promise((resolve, reject){
-		if(true){
-			resolve();
-		}
-		else{
-			reject();
-		}
-	});
+function getResponseFromAPI() {
+  return new Promise((resolve, reject) => {
+    /* eslint-disable */
+      if (true) {
+        resolve();
+      } else {
+        reject();
+      }
+      /* eslint-enable */
+  });
 }
+
+export default getResponseFromAPI;
